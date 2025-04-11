@@ -1,6 +1,7 @@
 # ai_chatbot/settings/production.py
 
 from .base import *
+import dj_database_url
 
 DEBUG = False
 ALLOWED_HOSTS = ["your-backend.onrailway.app", "localhost"]
