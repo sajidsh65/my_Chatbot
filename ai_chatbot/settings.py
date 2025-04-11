@@ -69,6 +69,11 @@ CORS_ALLOW_HEADERS = [
     'conversation-id',  # Add this line to allow this custom header
 
 ]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # For local dev
+    # "https://your-react-deployed-url.com",  # For deployed frontend
+]
 ROOT_URLCONF = 'ai_chatbot.urls'
 
 TEMPLATES = [
