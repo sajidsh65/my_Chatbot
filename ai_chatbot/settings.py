@@ -59,6 +59,8 @@ REST_FRAMEWORK = {
 
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -66,7 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
+    
 ]
 CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
 
@@ -79,6 +81,7 @@ CORS_ALLOW_HEADERS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # For local dev
+    "https://chatbot-bysajid-3685.up.railway.app",
     # "https://your-react-deployed-url.com",  # For deployed frontend
 ]
 ROOT_URLCONF = 'ai_chatbot.urls'
@@ -189,4 +192,4 @@ LOGGING = {
     },
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
