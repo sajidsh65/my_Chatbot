@@ -31,7 +31,8 @@ SECRET_KEY = 'django-insecure-305t4g%c-lvvq6ako6928fhv5j-=2a&kuu+abpv0w%b)zw@em2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["chatbot-bysajid-3685.up.railway.app"]
+# "chatbot-bysajid-3685.up.railway.app"
+ALLOWED_HOSTS = []
 
 
 # Application definition
