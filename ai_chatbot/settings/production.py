@@ -4,7 +4,9 @@ from .base import *
 import dj_database_url
 
 DEBUG = False
-ALLOWED_HOSTS = ["your-backend.onrailway.app", "localhost"]
+# ALLOWED_HOSTS = ["your-backend.onrailway.app", "localhost"]
+ALLOWED_HOSTS = ["chatbot-bysajid-3685.up.railway.app"]
+
 
 DATABASES = {
     'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
