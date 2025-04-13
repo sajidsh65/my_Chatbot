@@ -35,7 +35,7 @@ DEBUG = True
 # "chatbot-bysajid-3685.up.railway.app"
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = [
-    "chatbot-bysajid-3685.up.railway.app",
+    "https://chatbot-bysajid-3685.up.railway.app/",
     "https://chatbot-bysajid.vercel.app",
     # "localhost",  # Optional, for local development
     # "127.0.0.1",
@@ -77,7 +77,7 @@ MIDDLEWARE = [
     
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
+# CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
 
 CORS_ALLOW_HEADERS = [
     'content-type',
@@ -89,7 +89,7 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:3000",  # Local development
     "https://chatbot-bysajid.vercel.app",  # Vercel frontend URL
-    "https://chatbot-bysajid-3685.up.railway.app",  # Railway backend URL
+    "https://chatbot-bysajid-3685.up.railway.app/",  # Railway backend URL
 ]
 ROOT_URLCONF = 'ai_chatbot.urls'
 
@@ -199,4 +199,4 @@ LOGGING = {
     },
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
