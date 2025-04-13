@@ -100,7 +100,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Allow local frontend
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://chatbot-bysajid.vercel.app/",
+    "https://chatbot-bysajid.vercel.app",
     "https://chatbot-bysajid-3685.up.railway.app",  # optional
 ]
 
