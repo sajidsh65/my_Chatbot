@@ -5,10 +5,10 @@ import dj_database_url
 
 DEBUG = True
 ALLOWED_HOSTS = [
-    "https://chatbot-bysajid-3685.up.railway.app",
+    "chatbot-bysajid-3685.up.railway.app",
     "https://chatbot-bysajid.vercel.app",
-    # "localhost",  # Optional, for local development
-    # "127.0.0.1",
+    "localhost",  # Optional, for local development
+    "127.0.0.1",
 ]
 
 DATABASES = {
