@@ -6,7 +6,7 @@ import dj_database_url
 DEBUG = False
 # ALLOWED_HOSTS = ["your-backend.onrailway.app", "localhost"]
 ALLOWED_HOSTS = [
-    "https://chatbot-bysajid-3685.up.railway.app",
+    "chatbot-bysajid-3685.up.railway.app",
     "https://chatbot-bysajid.vercel.app"
 ]
 
