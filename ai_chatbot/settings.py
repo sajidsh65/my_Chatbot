@@ -33,7 +33,12 @@ DJANGO_SECRET_KEY=#kxvkw4up#d393kco&&ii0)()u2&6nohx=v8h0l&z1=y@#b^@g
 DEBUG = True
 
 # "chatbot-bysajid-3685.up.railway.app"
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "chatbot-bysajid-3685.up.railway.app",
+]
 
 
 # Application definition
@@ -60,8 +65,7 @@ REST_FRAMEWORK = {
 
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
-    'django.middleware.common.CommonMiddleware',
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -69,9 +73,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    # 'django.middleware.common.CommonMiddleware',
     
 ]
-CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
+CORS_ALLOW_ALL_ORIGINS = False  # Sabhi origins allow kar do
 
 CORS_ALLOW_HEADERS = [
     'content-type',
