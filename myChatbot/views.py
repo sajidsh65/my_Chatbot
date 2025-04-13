@@ -22,7 +22,8 @@ from django.utils.timezone import now
 load_dotenv()
 
 # Gemini API key
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY="AIzaSyCNr4imWpCLe1zJspdIzXcYUl9i7KzLlgQ"
 
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
