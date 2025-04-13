@@ -45,6 +45,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +55,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'myChatbot',
-    "corsheaders",
+    
 ]
 
 REST_FRAMEWORK = {
@@ -76,7 +77,7 @@ MIDDLEWARE = [
     
 ]
 
-# CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
+CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
 
 CORS_ALLOW_HEADERS = [
     'content-type',
@@ -198,4 +199,4 @@ LOGGING = {
     },
 }
 
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
