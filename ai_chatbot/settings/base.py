@@ -15,8 +15,8 @@ ALLOWED_HOSTS = []
 ALLOWED_HOSTS = [
     "chatbot-bysajid-3685.up.railway.app",
     "https://chatbot-bysajid.vercel.app",
-    "localhost",  # Optional, for local development
-    "127.0.0.1",
+    # "localhost",  # Optional, for local development
+    # "127.0.0.1",
 ]
 
 INSTALLED_APPS = [
@@ -99,7 +99,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ALLOW_ALL_ORIGINS = True
 # Allow local frontend
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    # "http://localhost:3000",
     "https://chatbot-bysajid.vercel.app",
     "https://chatbot-bysajid-3685.up.railway.app",  # optional
 ]
