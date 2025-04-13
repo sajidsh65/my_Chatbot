@@ -13,10 +13,10 @@ DEBUG = False
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = [
-    "https://chatbot-bysajid-3685.up.railway.app",
+    "chatbot-bysajid-3685.up.railway.app",
     "https://chatbot-bysajid.vercel.app",
-    # "localhost",  # Optional, for local development
-    # "127.0.0.1",
+    "localhost",  # Optional, for local development
+    "127.0.0.1",
 ]
 
 INSTALLED_APPS = [
@@ -102,7 +102,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:3000",
     "https://chatbot-bysajid.vercel.app",
-    "https://chatbot-bysajid-3685.up.railway.app",  # optional
+    "chatbot-bysajid-3685.up.railway.app",  # optional
 ]
 
 
