@@ -35,6 +35,7 @@ DEBUG = True
 # "chatbot-bysajid-3685.up.railway.app"
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = [
+    "https://chatbot-bysajid.vercel.app/",
     "localhost",
     "127.0.0.1",
     "chatbot-bysajid-3685.up.railway.app",
