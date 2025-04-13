@@ -7,7 +7,8 @@ DEBUG = False
 # ALLOWED_HOSTS = ["your-backend.onrailway.app", "localhost"]
 ALLOWED_HOSTS = [
     "chatbot-bysajid-3685.up.railway.app",
-    "https://chatbot-bysajid.vercel.app"
+    "https://chatbot-bysajid.vercel.app",
+    "localhost",
 ]
 
 
