@@ -8,7 +8,7 @@ class ChatSession(models.Model):
     This model stores the chat session information.
     Each user can have multiple chat sessions.
     """
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     session_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)  # Unique Session ID
     created_at = models.DateTimeField(auto_now_add=True)  # Session start time
     is_active = models.BooleanField(default=True)  # Track active/inactive sessions
