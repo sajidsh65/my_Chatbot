@@ -5,7 +5,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-DJANGO_SECRET_KEY=#kxvkw4up#d393kco&&ii0)()u2&6nohx=v8h0l&z1=y@#b^@g
+DJANGO_SECRET_KEY="#kxvkw4up#d393kco&&ii0)()u2&6nohx=v8h0l&z1=y@#b^@g"
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "unsafe-secret-key")
