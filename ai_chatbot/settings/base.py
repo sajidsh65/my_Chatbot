@@ -11,9 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "unsafe-secret-key")
 DEBUG = False
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 ALLOWED_HOSTS = [
-    "chatbot-bysajid-3685.up.railway.app",
+    "https://chatbot-bysajid-3685.up.railway.app/",
     "https://chatbot-bysajid.vercel.app",
     # "localhost",  # Optional, for local development
     # "127.0.0.1",
