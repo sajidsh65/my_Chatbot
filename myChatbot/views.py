@@ -183,3 +183,16 @@ def create_session(request):
     session = ChatSession.objects.create(session_id=session_id, user=request.user)
     return Response({"session_id": session.session_id}, status=201)
 
+@api_view(["DELETE"])
+@permission_classes([IsAuthenticated])
+def delete_session(request, session_id):
+    try:
+        session = ChatSession.objects.filter(session_id=session_id, user=request.user).first()
+        if not session:
+            return Response({"error": "Session not found"}, status=404)
+
+        session.delete()
+        return Response({"message": "Session deleted successfully"}, status=200)
+
+    except Exception as e:
+        return Response({"error": str(e)}, status=500)
