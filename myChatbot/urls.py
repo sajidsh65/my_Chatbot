@@ -3,7 +3,7 @@
 from django.urls import path
 from rest_framework.authtoken.views import obtain_auth_token
 from .views import (
-    register_user, login_user,get_all_chat_histories, logout_user, chatbot_response, create_session)
+    register_user, login_user,get_all_chat_histories, logout_user, chatbot_response, create_session, delete_session)
 
 urlpatterns = [
     path('register/', register_user, name='register'),
@@ -13,6 +13,7 @@ urlpatterns = [
     path('chat/', chatbot_response, name='chatbot_response'),
     path("create-session/", create_session, name="create_session"),
     path("all-chat-histories/", get_all_chat_histories, name="all-chat-histories"),
+    path("delete-session/<str:session_id>/", delete_session, name="delete-session"),
 
 ]
 
